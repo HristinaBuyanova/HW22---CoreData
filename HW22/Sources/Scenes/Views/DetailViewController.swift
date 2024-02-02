@@ -1,14 +1,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
 
     }
+    
 
 
 }
-
