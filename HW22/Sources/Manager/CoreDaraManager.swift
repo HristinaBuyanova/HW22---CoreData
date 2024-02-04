@@ -17,7 +17,7 @@ public final class CoreDaraManager: NSObject {
         appDelegate.persistantContainer.viewContext
     }
 
-    public func createUser(name: String, phoneNumber: String, dateOfBirth: Date?) {
+    public func createUser(name: String, phoneNumber: String?, dateOfBirth: Date?) {
         guard let userEntityDescription = NSEntityDescription.entity(forEntityName: "User", in: contex) else { return }
         let user = User(entity: userEntityDescription, insertInto: contex)
         user.name = name
