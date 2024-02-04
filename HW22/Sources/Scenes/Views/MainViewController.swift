@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
         textField.layer.cornerRadius = 20
         textField.backgroundColor = .lightGray
         textField.textColor = .systemGray
-        textField.placeholder = "Print your name here"
+        textField.placeholder = "Print name user here"
         textField.textAlignment = .left
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 20
-        button.setTitle("Press", for: .normal)
+        button.setTitle("Add user", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(buttonCreateUserPress), for: .touchUpInside)
@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "defaultCell")
-        //        table.delegate = self
+        table.delegate = self
         table.dataSource = self
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
@@ -67,10 +67,7 @@ class MainViewController: UIViewController {
                 alert.addAction(cancelAction)
 
                 self.present(alert, animated: true, completion: nil)
-
-
             }
-
         }
 
         presenter?.createUser(name: userName, phoneNumber: nil, dateOfBirth: nil)
