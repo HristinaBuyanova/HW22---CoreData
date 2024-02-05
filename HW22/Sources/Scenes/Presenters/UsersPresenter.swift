@@ -11,12 +11,12 @@ class UsersPresenter {
         self.view = view
     }
 
-    func createUser(name: String, phoneNumber: String?, dateOfBirth: Date?) {
-        coreDataManager.createUser(name: name, phoneNumber: phoneNumber, dateOfBirth: dateOfBirth)
+    func createUser(name: String, gender: String?, dateOfBirth: Date?) {
+        coreDataManager.createUser(name: name, gender: gender, dateOfBirth: dateOfBirth)
     }
 
-    func updateUser(user: User, newName: String, newPhoneNumber: String, newDateOfBirth: Date) {
-        coreDataManager.updateUser(user: user, newName: newName, newPhoneNumber: newPhoneNumber, newDateOfBirth: newDateOfBirth)
+    func updateUser(user: User, newName: String, newGender: String, newDateOfBirth: Date) {
+        coreDataManager.updateUser(user: user, newName: newName, newGender: newGender, newDateOfBirth: newDateOfBirth)
     }
 
     func deleteUser(user: User) {

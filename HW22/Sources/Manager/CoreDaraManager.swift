@@ -17,11 +17,11 @@ public final class CoreDaraManager: NSObject {
         appDelegate.persistantContainer.viewContext
     }
 
-    public func createUser(name: String, phoneNumber: String?, dateOfBirth: Date?) {
+    public func createUser(name: String, gender: String?, dateOfBirth: Date?) {
         guard let userEntityDescription = NSEntityDescription.entity(forEntityName: "User", in: contex) else { return }
         let user = User(entity: userEntityDescription, insertInto: contex)
         user.name = name
-        user.phoneNumber = phoneNumber
+        user.gender = gender
         user.dateOfBirth = dateOfBirth
 
         appDelegate.saveContex()
@@ -53,10 +53,10 @@ public final class CoreDaraManager: NSObject {
 
     public func updateUser(user: User,
                            newName: String,
-                           newPhoneNumber: String,
+                           newGender: String,
                            newDateOfBirth: Date) {
         user.name = newName
-        user.phoneNumber = newPhoneNumber
+        user.gender = newGender
         user.dateOfBirth = newDateOfBirth
 
         do {

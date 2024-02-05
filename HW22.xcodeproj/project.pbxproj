@@ -20,6 +20,7 @@
 		6EA8569D2B6D915900B87E34 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8569B2B6D915900B87E34 /* User+CoreDataProperties.swift */; };
 		6EA856A02B6E4C3500B87E34 /* CoreDaraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8569F2B6E4C3500B87E34 /* CoreDaraManager.swift */; };
 		6EA856A32B703AF300B87E34 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA856A22B703AF300B87E34 /* HideKeyboard.swift */; };
+		6EA856A52B71521600B87E34 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA856A42B71521600B87E34 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6EA8569B2B6D915900B87E34 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6EA8569F2B6E4C3500B87E34 /* CoreDaraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDaraManager.swift; sourceTree = "<group>"; };
 		6EA856A22B703AF300B87E34 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		6EA856A42B71521600B87E34 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6EA856A22B703AF300B87E34 /* HideKeyboard.swift */,
+				6EA856A42B71521600B87E34 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				6EA856A32B703AF300B87E34 /* HideKeyboard.swift in Sources */,
 				6EA8567D2B6BBD9400B87E34 /* MainViewController.swift in Sources */,
 				6EA856792B6BBD9400B87E34 /* AppDelegate.swift in Sources */,
+				6EA856A52B71521600B87E34 /* UITextField.swift in Sources */,
 				6EA8569D2B6D915900B87E34 /* User+CoreDataProperties.swift in Sources */,
 				6EA856A02B6E4C3500B87E34 /* CoreDaraManager.swift in Sources */,
 				6EA856992B6D7FAB00B87E34 /* CoreData.xcdatamodeld in Sources */,

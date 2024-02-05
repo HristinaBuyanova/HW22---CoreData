@@ -11,7 +11,7 @@ extension User {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var phoneNumber: String?
+    @NSManaged public var gender: String?
     @NSManaged public var dateOfBirth: Date?
 
 }
