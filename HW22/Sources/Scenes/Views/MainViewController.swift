@@ -49,6 +49,13 @@ class MainViewController: UIViewController {
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.presenter?.presentUsers()
+            self.tableView.reloadData()
+        }
+    }
+
 //    MARK: - Setup
     private func setupView() {
         view.backgroundColor = .systemBackground
