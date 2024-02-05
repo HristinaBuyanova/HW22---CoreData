@@ -202,8 +202,6 @@ class DetailViewController: UIViewController, PresenterView {
         navigationItem.rightBarButtonItem = editButton
     }
 
-
-
     private func formatToString(date: Date) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/yyyy"
@@ -266,17 +264,6 @@ class DetailViewController: UIViewController, PresenterView {
         }
         isEditingMode.toggle()
         editButton()
-
-//        if let customView = sender.view,
-//           let _ = navigationItem.rightBarButtonItem {
-//            UIView.animate(withDuration: 0.1, animations: {
-//                customView.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
-//            }) { _ in
-//                UIView.animate(withDuration: 0.1) {
-//                    customView.backgroundColor = .clear
-//                }
-//            }
-//        }
     }
 }
 

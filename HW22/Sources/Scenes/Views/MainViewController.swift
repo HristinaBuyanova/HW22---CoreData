@@ -80,7 +80,6 @@ class MainViewController: UIViewController {
             pressButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
             pressButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
             pressButton.heightAnchor.constraint(equalToConstant: 42),
-//            pressButton.widthAnchor.constraint(equalToConstant: 100),
 
             tableView.topAnchor.constraint(equalTo: pressButton.bottomAnchor, constant: 10),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
@@ -134,8 +133,6 @@ class MainViewController: UIViewController {
             swipe.performsFirstActionWithFullSwipe = false
             return swipe
         }
-
-
     }
 
     extension MainViewController: UITableViewDataSource {

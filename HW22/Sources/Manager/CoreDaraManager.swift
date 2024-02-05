@@ -34,13 +34,6 @@ public final class CoreDaraManager: NSObject {
             print(error.localizedDescription)
         }
         return [User()]
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//        do {
-//            return try contex.fetch(fetchRequest) as! [User]
-//        } catch {
-//            print(error.localizedDescription)
-//        }
-//        return []
     }
 
     public func fetchUser(_ name: String) -> User? {
